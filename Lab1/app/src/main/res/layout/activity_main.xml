@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginBottom="48dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOne"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="401dp"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Fruit List"
+        app:layout_constraintBottom_toTopOf="@+id/btnTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Fruit List" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="405dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/btnOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:text="List of Places"
+        app:layout_constraintBottom_toTopOf="@+id/btnThree"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="List of Places" />
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="405dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/btnOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:text="Image"
+        app:layout_constraintBottom_toTopOf="@+id/btnFour"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Image" />
+
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="405dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/btnOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="202dp"
+        android:text="More Lists"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="More Lists" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
